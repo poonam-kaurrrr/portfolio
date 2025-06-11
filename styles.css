@@ -1,4 +1,3 @@
-/* Global Styles */
 * {
   margin: 0;
   padding: 0;
@@ -10,7 +9,7 @@ body {
   font-family: 'Poppins', sans-serif;
   background-color: #0e0e0e;
   color: #ebebeb;
-  padding-top: 60px; /* roughly nav height */
+  padding-top: 60px;
   line-height: 1.6;
   margin:0;
 }
@@ -25,24 +24,22 @@ ul {
 }
 
 /* Navbar */
-
 nav {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;            /* Fixed height for the navbar */
+  height: 60px;
   display: flex;
-  align-items: center;     /* Vertically center items inside nav */
+  align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;         /* Horizontal padding only, no top/bottom */
-  background-color: rgba(14, 14, 14, 0.9); /* Or solid background */
+  padding: 0 2rem;
+  background-color: rgba(14, 14, 14, 0.9);
   backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-
   z-index: 9999;
   box-sizing: border-box;
-  margin: 0;               /* Remove any margin */
+  margin: 0;
 }
 
 
@@ -63,26 +60,26 @@ nav {
 
 .nav-links a {
 position: relative;
-  color: inherit;              /* default color */
-  text-decoration: none;       /* no underline normally */
-  transition: color 0.3s;      /* smooth transition */
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s;
 }
 
 .nav-links a:hover {
-  color: white;                /* text turns white on hover */
+  color: white;
 }
 .nav-links a::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: -3px;          /* slightly below text */
-  height: 2px;           /* thickness of underline */
-  width: 0;              /* start with zero width */
+  bottom: -3px;
+  height: 2px;
+  width: 0;
   background-color: white;
-  transition: width 0.5s ease; /* animate the width */
+  transition: width 0.5s ease;
 }
 .nav-links a:hover::after {
-  width: 100%;          /* underline expands fully */
+  width: 100%;
 }
 
 /* Hero */
@@ -94,7 +91,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-   padding-top: 0;          /* Remove any padding that pushes nav down */
+   padding-top: 0;
     margin: 0;
 }
 .bg-video {
@@ -107,7 +104,7 @@ header {
   z-index: -1;
 }
 .hero {
-  padding-top: 30px;       /* At least equal to nav height */
+  padding-top: 30px;
 }
 .hero h1.kaur {
   font-size: 6.7rem;
@@ -143,11 +140,11 @@ header {
 }
 
 .about-left {
-  flex: 1.7 1 300px; /* Grow slightly more than the image */
+  flex: 1.7 1 300px;
   padding: 1rem;
 }
 .about-right {
-  flex: 0.3 1 300px; /* Shrink slightly */
+  flex: 0.3 1 300px;
   padding: 1rem;
 }
 
@@ -171,17 +168,17 @@ header {
 
 .profile-img {
   width: 100%;
-  max-width: 300px;
+  height:auto;
   border-radius: 10px;
   margin-bottom: 1rem;
-  border: 1px solid #ebebeb; /* soft pink Y2K vibe */
+  border: 1px solid #ebebeb;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 12px rgba(235, 235, 235, 0.3); /* soft glow */
+  box-shadow: 0 4px 12px rgba(235, 235, 235, 0.3);
 }
 
 .profile-img:hover {
-  transform: scale(1.05); /* slight zoom */
-  box-shadow: 0 6px 18px rgba(235, 235, 235, 0.5); /* stronger glow on hover */
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(235, 235, 235, 0.5);
 }
 
 .info-box {
@@ -191,20 +188,20 @@ header {
   text-align: center;
 }
 .about-left h2:hover {
-  color: white;                /* text turns white on hover */
+  color: white;
 }
 .about-left h2::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 5px;       /* slightly below text */
-  height: 2px;           /* thickness of underline */
-  width: 0;              /* start with zero width */
+  bottom: 5px;
+  height: 2px;
+  width: 0;
   background-color: white;
-  transition: width 0.5s ease; /* animate the width */
+  transition: width 0.5s ease;
 }
 .about-left h2:hover::after {
-  width: 100%;          /* underline expands fully */
+  width: 100%;
 }
 
 
@@ -271,19 +268,15 @@ margin-bottom: 5px; /* adjust value as needed */
   content: '';
   position: absolute;
   left: 0;
-  bottom: 5px;       /* slightly below text */
-  height: 2px;           /* thickness of underline */
-  width: 0;              /* start with zero width */
+  bottom: 5px;
+  height: 2px;
+  width: 0;
   background-color: white;
-  transition: width 0.5s ease; /* animate the width */
+  transition: width 0.5s ease;
 }
 .services-section h2:hover::after {
-  width: 100%;          /* underline expands fully */
+  width: 100%;
 }
-
-
-/* Works */
-
 
 .works-section {
   background-color: #111;
@@ -315,12 +308,12 @@ margin-bottom: 5px; /* adjust value as needed */
   height: 335px;
   border: 1px solid #333;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 0px 0px rgba(235, 235, 235, 0.3); /* soft glow */
+  box-shadow: 0 0px 0px rgba(235, 235, 235, 0.3);
 }
 
 .work-card:hover {
-  transform: scale(1.05); /* slight zoom */
-    box-shadow: 0 6px 14px rgba(235, 235, 235, 0.5); /* stronger glow on hover */
+  transform: scale(1.05);
+    box-shadow: 0 6px 14px rgba(235, 235, 235, 0.5);
 }
 
 .work-card img {
@@ -356,7 +349,7 @@ margin-bottom: 5px; /* adjust value as needed */
   color: #ebebeb;
   text-align: center;
   font-size: 1.1rem;
-  height: 60px;        /* increase this as needed */
+  height: 60px;
   line-height: 60px;
   font-weight: bold;
   transform: translateY(100%);
@@ -368,20 +361,20 @@ margin-bottom: 5px; /* adjust value as needed */
 }
 
 .works-section h2:hover {
-  color: white;                /* text turns white on hover */
+  color: white;
 }
 .works-section h2::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 5px;       /* slightly below text */
-  height: 2px;           /* thickness of underline */
-  width: 0;              /* start with zero width */
+  bottom: 5px;
+  height: 2px;
+  width: 0;
   background-color: white;
-  transition: width 0.5s ease; /* animate the width */
+  transition: width 0.5s ease;
 }
 .works-section h2:hover::after {
-  width: 100%;          /* underline expands fully */
+  width: 100%;
 }
 
 /* Contact */
@@ -430,20 +423,20 @@ footer a {
 }
 
 footer h2:hover {
-  color: white;                /* text turns white on hover */
+  color: white;
 }
 footer h2::after {
   content: '';
   position: absolute;
   left: 0;
-  bottom: 5px;       /* slightly below text */
-  height: 2px;           /* thickness of underline */
-  width: 0;              /* start with zero width */
+  bottom: 5px;
+  height: 2px;
+  width: 0;
   background-color: white;
-  transition: width 0.5s ease; /* animate the width */
+  transition: width 0.5s ease;
 }
 footer h2:hover::after {
-  width: 100%;          /* underline expands fully */
+  width: 100%;
 }
 
 footer a:hover {
@@ -464,9 +457,19 @@ footer .note {
 
 /* Responsive */
 @media screen and (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.5rem;
-  }
+.hero h1.kaur,
+.hero h1.portfolio {
+  font-size: clamp(2.5rem, 6vw, 7rem); /* responsive heading size */
+  margin: 0;
+  line-height: 1.1;
+}
+
+.hero p {
+  font-size: clamp(0.8rem, 2.5vw, 1.2rem); /* responsive paragraph size */
+  padding: 0 1rem;
+  text-align: center;
+  margin-top: 0.1rem;
+}
 
   .hero h1 span {
     font-size: 2rem;
@@ -513,9 +516,6 @@ footer .note {
   a.back:hover {
     color: #fff;
   }
+  }
 
-
-
-
-}
 
