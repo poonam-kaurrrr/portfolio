@@ -478,7 +478,18 @@ footer .note {
   .about-section {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
+  .about-left, .about-right {
+      max-width: 100%;
+      padding: 1rem 0;
+    }
+
+    .about-left h2,
+    .about-left p,
+    .about-left h3 {
+      text-align: center;
+    }
 
   .services-grid, .works-grid, .contact-info {
     flex-direction: column;
@@ -516,6 +527,10 @@ footer .note {
   a.back:hover {
     color: #fff;
   }
+  nav {
+      padding-left: 0.5rem; /* or 0 */
+      padding-right: 1rem;  /* keep space for nav-links if needed */
+    }
   }
 
 
