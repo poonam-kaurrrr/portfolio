@@ -45,7 +45,7 @@ nav {
 
 .logo {
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 16.2px;
     color: #fff;
 }
 
@@ -459,13 +459,13 @@ footer .note {
 @media screen and (max-width: 768px) {
 .hero h1.kaur,
 .hero h1.portfolio {
-  font-size: clamp(2.5rem, 6vw, 7rem); /* responsive heading size */
+  font-size: clamp(3.5rem, 6vw, 8rem); /* responsive heading size */
   margin: 0;
   line-height: 1.1;
 }
 
 .hero p {
-  font-size: clamp(0.8rem, 2.5vw, 1.2rem); /* responsive paragraph size */
+  font-size: clamp(1.2rem, 2.5vw, 1.5rem); /* responsive paragraph size */
   padding: 0 1rem;
   text-align: center;
   margin-top: 0.1rem;
