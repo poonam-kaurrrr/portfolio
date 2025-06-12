@@ -499,6 +499,9 @@ footer .note {
     text-align: center;
   }
 
+  .services-section h2 {
+      text-align: center;
+    }
   h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
