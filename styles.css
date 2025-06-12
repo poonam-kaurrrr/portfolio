@@ -533,14 +533,13 @@ footer .note {
       padding-left: 5px;
       padding-right: 1rem;
     }
-
-   .logo {
-      padding-right: 2px;
+  .logo {
+      margin-right: 10px;
     }
-    .contact-info > div {
+  .contact-info > div {
         margin-bottom: -50px;
       }
-     footer .note {
+  footer .note {
        margin-top: 40px !important;
      }
 
