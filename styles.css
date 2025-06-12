@@ -490,12 +490,13 @@ footer .note {
     .about-left h2,
     .about-left p,
     .about-left h3 {
-      text-align: center;
+    text-align: center;
     }
 
-  .services-grid, .works-grid, .contact-info {
+  .service-card, .work-card, .contact-info {
     flex-direction: column;
     align-items: center;
+    text-align: center;
   }
 
   h1 {
